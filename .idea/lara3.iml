@@ -9,7 +9,9 @@
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/darkaonline/l5-swagger" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/doctrine/lexer" />
@@ -80,6 +82,7 @@
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/sebastian/resource-operations" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/swagger-api/swagger-ui" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/symfony/css-selector" />
@@ -108,11 +111,13 @@
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/symfony/translation-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/zircote/swagger-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

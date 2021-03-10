@@ -9,6 +9,8 @@ services:
       - 8080:80
     volumes:
       - ./newlara:/var/www/html
+    security_opt:
+      - seccomp:unconfined
     networks:
       - lara3
 

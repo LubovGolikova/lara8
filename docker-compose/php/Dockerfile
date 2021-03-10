@@ -33,7 +33,8 @@ php composer-setup.php && \
 php -r "unlink('composer-setup.php');"
 
 
-RUN chown -R 777 /var/www \
-    && chmod 777 /var/www \
+RUN chown -R www-data:www-data  /var/www \
+    && chmod -R 777 /var/www \
     && a2enmod rewrite
+
 COPY httpd.conf  /etc/apache2/sites-enabled/000-default.conf

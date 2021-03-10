@@ -109,6 +109,11 @@
       <path value="$PROJECT_DIR$/newlara/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/newlara/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/newlara/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/newlara/vendor/swagger-api/swagger-ui" />
+      <path value="$PROJECT_DIR$/newlara/vendor/darkaonline/l5-swagger" />
+      <path value="$PROJECT_DIR$/newlara/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/newlara/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/newlara/vendor/doctrine/annotations" />
     </include_path>
   </component>
   <component name="PhpUnit">
