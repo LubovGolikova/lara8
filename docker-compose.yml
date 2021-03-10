@@ -1,0 +1,55 @@
+version: "3.7"
+services:
+  web:
+    image: php:8.0-apache
+    ports:
+      - 8027:80
+    volumes:
+      - ./newlara:/var/www/html
+    networks:
+      - lara3
+
+  app:
+    build:
+      args:
+        user: liubov
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: lara3
+    container_name: lara3-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - lara3
+
+  db:
+    image: mysql:5.7
+    container_name: lara3-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+    networks:
+      - lara3
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: lara3-phpadmin
+    restart: always
+    ports:
+      - 8026:80
+    networks:
+      - lara3
+
+networks:
+  lara3:
+    driver: bridge
