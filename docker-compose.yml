@@ -1,28 +1,14 @@
 version: "3.7"
 services:
   web:
-    image: php:8.0-apache
+#    image: php:8.0-apache
+    build:
+      ./docker-compose/php
     working_dir: /var/www/html/
     ports:
       - 8080:80
     volumes:
-      - ./newlara:/var/www/html/
-    networks:
-      - lara3
-
-  app:
-    build:
-      args:
-        user: liubov
-        uid: 1000
-      context: ./
-      dockerfile: Dockerfile
-    image: lara3
-    container_name: lara3-app
-    restart: unless-stopped
-    working_dir: /var/www/html/
-    volumes:
-      - ./:/var/www/html/
+      - ./newlara:/var/www/html
     networks:
       - lara3
 

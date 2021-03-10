@@ -1,10 +1,7 @@
 FROM php:8.0-apache
 
-#ENV APACHE_DOCUMENT_ROOT=/var/www/newlara/public
-#RUN sed -ri -e 's!/var/www/newlara!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
-#RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
-#
-#RUN a2enmod rewrite headers
+RUN groupadd --gid 1000 developer && useradd -m -G www-data -u 1000 --gid=1000 developer
+ENV APACHE_RUN_USER=developer
 
 RUN apt-get update && apt-get install -y \
         libpng-dev \
@@ -30,22 +27,13 @@ RUN apt-get update && apt-get install -y \
 #    && yum -y --setopt=tsflags=nodocs install nodejs
 
 ## Get latest Composer
-#RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-#php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"	&& \
-#php composer-setup.php && \
-#php -r "unlink('composer-setup.php');"
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
+php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"	&& \
+php composer-setup.php && \
+php -r "unlink('composer-setup.php');"
 
 
 RUN chown -R 777 /var/www \
     && chmod 777 /var/www \
     && a2enmod rewrite
-
-COPY ./docker-compose/httpd/httpd.conf /etc/apache2/sites-available/laravel.conf
-
-RUN a2ensite laravel.conf
-RUN service apache2 restart
-
-
-COPY newlara/package*.json ./
-
-#RUN npm install
+COPY httpd.conf  /etc/apache2/sites-enabled/000-default.conf
