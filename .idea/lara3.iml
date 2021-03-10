@@ -27,6 +27,7 @@
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/laravel/breeze" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/laravel/sail" />
       <excludeFolder url="file://$MODULE_DIR$/newlara/vendor/laravel/tinker" />

@@ -2,10 +2,11 @@ version: "3.7"
 services:
   web:
     image: php:8.0-apache
+    working_dir: /var/www/html/
     ports:
-      - 8027:80
+      - 8080:80
     volumes:
-      - ./newlara:/var/www/html
+      - ./newlara:/var/www/html/
     networks:
       - lara3
 
@@ -19,9 +20,9 @@ services:
     image: lara3
     container_name: lara3-app
     restart: unless-stopped
-    working_dir: /var/www/
+    working_dir: /var/www/html/
     volumes:
-      - ./:/var/www
+      - ./:/var/www/html/
     networks:
       - lara3
 
@@ -46,7 +47,7 @@ services:
     container_name: lara3-phpadmin
     restart: always
     ports:
-      - 8026:80
+      - 8090:80
     networks:
       - lara3
 

@@ -108,6 +108,7 @@
       <path value="$PROJECT_DIR$/newlara/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/newlara/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/newlara/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/newlara/vendor/laravel/breeze" />
     </include_path>
   </component>
   <component name="PhpUnit">
