@@ -18,13 +18,6 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install zip \
     && docker-php-source delete
-#    # Install Composer
-#    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-#    && composer self-update --1 \
-#    && composer global require hirak/prestissimo --no-plugins --no-scripts \
-    # Install NodeJS
-#    && curl --silent --location https://rpm.nodesource.com/setup_12.x | bash - \
-#    && yum -y --setopt=tsflags=nodocs install nodejs
 
 ## Get latest Composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
@@ -32,6 +25,9 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62
 php composer-setup.php && \
 php -r "unlink('composer-setup.php');"
 
+#install git
+RUN apt-get update \
+    && apt-get install -y git
 
 RUN chown -R www-data:www-data  /var/www \
     && chmod -R 777 /var/www \

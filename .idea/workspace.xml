@@ -2,13 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea9ffc01-438e-4c09-8254-93a5f0d248d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lara3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newlara/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newlara/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/newlara/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/.styleci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/AuthenticatedSessionController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/ConfirmablePasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/EmailVerificationNotificationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/EmailVerificationPromptController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/NewPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/PasswordResetLinkController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Auth/VerifyEmailController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Controllers/ProjectController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/TrustHosts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Http/Requests/Auth/LoginRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Models/Project.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Models/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/View/Components/AppLayout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/app/View/Components/GuestLayout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/composer.phar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/cors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/migrations/2021_03_16_081820_create_posts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/migrations/2021_03_16_082941_add_title_to_posts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/migrations/2021_03_16_084447_create_projects_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/database/seeders/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/auth/confirm-password.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/auth/forgot-password.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/auth/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/auth/register.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/auth/reset-password.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/auth/verify-email.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/application-logo.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/auth-card.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/auth-session-status.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/auth-validation-errors.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/button.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/dropdown-link.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/dropdown.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/input.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/label.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/nav-link.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/components/responsive-nav-link.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/dashboard.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/layouts/__app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/layouts/app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/layouts/guest.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/layouts/navigation.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/routes/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/Feature/AuthenticationTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/Feature/EmailVerificationTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/Feature/PasswordConfirmationTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/Feature/PasswordResetTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/Feature/RegistrationTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newlara/webpack.mix.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,16 +277,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/newlara/resources/views/layouts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/newlara/resources/views/layouts" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docker-compose/php" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -188,7 +317,7 @@
       <workItem from="1615385800050" duration="1017000" />
       <workItem from="1615386832997" duration="6109000" />
       <workItem from="1615446584309" duration="322000" />
-      <workItem from="1615803189684" duration="7057000" />
+      <workItem from="1615803189684" duration="14197000" />
     </task>
     <servers />
   </component>
