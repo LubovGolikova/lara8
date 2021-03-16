@@ -12,11 +12,11 @@ services:
     security_opt:
       - seccomp:unconfined
     networks:
-      - lara3
+      - lara8
 
   db:
     image: mysql:5.7
-    container_name: lara3-db
+    container_name: lara8-db
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
@@ -28,17 +28,17 @@ services:
     volumes:
       - ./docker-compose/mysql:/docker-entrypoint-initdb.d
     networks:
-      - lara3
+      - lara8
 
   phpmyadmin:
     image: phpmyadmin
-    container_name: lara3-phpadmin
+    container_name: lara8dock-phpadmin
     restart: always
     ports:
       - 8090:80
     networks:
-      - lara3
+      - lara8
 
 networks:
-  lara3:
+  lara8:
     driver: bridge
