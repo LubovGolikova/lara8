@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\Article;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Faker\Generator as Faker;
@@ -24,12 +24,10 @@ class ArticleFactory extends Factory
     public function definition()
     {
         return [
-            'user_id'=>  \App\Models\User::factory(1)->make(),
-            'name' => $this->faker->name,
-            'email' => $this->faker->unique()->safeEmail,
-            'email_verified_at'=> now(),
-            'password'=>'2',
-            'remember_token'=>Str::random(10)
+            'user_id' => User::factory(),
+            'title' => $this->faker->sentence,
+            'excerpt' => $this->faker->sentence,
+            'body'=> $this->faker->paragraph
 
         ];
     }

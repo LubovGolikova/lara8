@@ -25,10 +25,12 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62
 php composer-setup.php && \
 php -r "unlink('composer-setup.php');"
 
-#install git
-RUN apt-get update \
-    && apt-get install -y git \
-    && apt-get install -y npm
+
+RUN apt-get install -y nodejs npm
+
+#RUN apt-get update \
+#    && apt-get install -y git \
+#    && apt-get install -y npm
 
 RUN chown -R www-data:www-data  /var/www \
     && chmod -R 777 /var/www \

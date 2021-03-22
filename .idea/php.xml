@@ -114,6 +114,7 @@
       <path value="$PROJECT_DIR$/newlara/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/newlara/vendor/doctrine/annotations" />
       <path value="$PROJECT_DIR$/newlara/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/newlara/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="PhpUnit">

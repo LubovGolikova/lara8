@@ -21,6 +21,7 @@
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.1",
         "laravel/sail": "^1.0.1",
+        "laravel/ui": "^3.2",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
@@ -40,7 +41,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files":[
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

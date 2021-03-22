@@ -21,7 +21,7 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-
+    protected $primaryKey = 'user_id';
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -40,4 +40,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function articles()
+    {
+        return $this->hasMany(Article::class);
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
+
+    public function assignRole($role)
+    {
+        $this->roles()->save($role);
+    }
 }
